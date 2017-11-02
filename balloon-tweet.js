@@ -1,5 +1,6 @@
 // javascript:
 (() => {
+	let x = 0;
 	const texts = $('.tweet')
 		.find('.tweet-text')
 		.map((t, v) => v.innerText);
@@ -17,7 +18,7 @@
 		'#ffff7f',
 		'#ffbf7f',
 	];
-	setInterval(() => {
+	const iid = setInterval(() => {
 		const text = texts[Math.floor(Math.random() * texts.length)];
 		const element = document.createElement('div');
 		element.innerHTML = text;
@@ -40,5 +41,8 @@
 			}
 			element.style.transform = `rotate(${Math.abs(t % 16 - 8) - 4}deg)`;
 		}, 100);
+		if (++x === 100) {
+			window.clearInterval(iid);
+		}
 	}, 1000);
 })();
