@@ -1,0 +1,23 @@
+{
+	"name": "bookmarklets",
+	"version": "1.0.0",
+	"description": "my Bookmarklets",
+	"main": "readme.md",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/elzup/bookmarklets.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/elzup/bookmarklets/issues"
+	},
+	"homepage": "https://github.com/elzup/bookmarklets#readme",
+	"devDependencies": {
+		"eslint-config-google": "^0.9.1",
+		"eslint": "^4.17.0"
+	}
+}

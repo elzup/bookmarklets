@@ -1,5 +1,4 @@
-Bookmarklets
-===
+# Bookmarklets
 
 ## Guildeline for me
 
@@ -8,4 +7,5 @@ Bookmarklets
 * Need to create **really really small scripts**. => OK. **Use Bookmarklets**.
 
 ## Notes
+
 * Main browser: Gogole Chrome
