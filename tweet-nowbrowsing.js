@@ -1,5 +1,6 @@
 // Twitter 共有 Window を開く
-javascript: (() => {
+// javascript:
+(() => {
   const url = window.location.href;
   const encodedUrl = encodeURIComponent(url);
   const text = encodeURIComponent(`見てる - ${document.title}`);
