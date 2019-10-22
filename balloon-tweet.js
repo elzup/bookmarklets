@@ -2,8 +2,8 @@
 (() => {
   let x = 0;
   const texts = $('.tweet')
-    .find('.tweet-text')
-    .map((t, v) => v.innerText);
+      .find('.tweet-text')
+      .map((t, v) => v.innerText);
   const colors = [
     '#ff7f7f',
     '#ff7fbf',
@@ -39,7 +39,7 @@
         window.clearInterval(sid2);
         document.body.removeChild(element);
       }
-      element.style.transform = `rotate(${Math.abs(t % 16 - 8) - 4}deg)`;
+      element.style.transform = `rotate(${Math.abs((t % 16) - 8) - 4}deg)`;
     }, 100);
     if (++x === 100) {
       window.clearInterval(iid);

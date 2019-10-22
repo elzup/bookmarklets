@@ -4,7 +4,7 @@ javascript: (function() {
   const artist = document.querySelector('#player-artist').innerHTML;
   const album = document.querySelector('.player-album').innerHTML;
   const text = encodeURIComponent(
-    'Now playing on Google Play Music: ' +
+      'Now playing on Google Play Music: ' +
       song +
       ' - ' +
       artist +
@@ -12,8 +12,8 @@ javascript: (function() {
       album
   );
   window.open(
-    'https://twitter.com/intent/tweet?text=' + text + '&hashtags=NowPlaying',
-    '',
-    'width=550, height=420'
+      'https://twitter.com/intent/tweet?text=' + text + '&hashtags=NowPlaying',
+      '',
+      'width=550, height=420'
   );
 })();

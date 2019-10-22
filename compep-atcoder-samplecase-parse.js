@@ -3,8 +3,8 @@
 // javascript:
 (() => {
   const codes = [].map.call(
-    document.querySelectorAll('.div-sample-copy'),
-    (e) => e.nextSibling.innerHTML
+      document.querySelectorAll('.div-sample-copy'),
+      e => e.nextSibling.innerHTML
   );
   const n = 2;
   const len = Math.round(codes.length / n, 10);
@@ -13,9 +13,9 @@
     ret.push(codes.slice(i * n, i * n + n));
   }
   const text = ret
-    .map((e) => {
-      return e.join('----\n');
-    })
-    .join('====\n');
+      .map(e => {
+        return e.join('----\n');
+      })
+      .join('====\n');
   document.write('<pre>' + text + '</pre>');
 })();
