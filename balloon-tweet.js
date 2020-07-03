@@ -2,8 +2,8 @@
 (() => {
   let x = 0;
   const texts = $('.tweet')
-      .find('.tweet-text')
-      .map((t, v) => v.innerText);
+    .find('.tweet-text')
+    .map((t, v) => v.innerText);
   const colors = [
     '#ff7f7f',
     '#ff7fbf',
